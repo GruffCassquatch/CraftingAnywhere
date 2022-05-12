@@ -116,6 +116,29 @@ namespace CraftingAnywhere
 		[Name("Wolfskin Coat")]
 		[Description("Craft anywhere")]
 		public bool wolfskinCoatAnywhere = false;
+
+
+
+		[Section("Northfolk Clothing Pack Mod Items")]
+		[Name("Bearskin Leggings")]
+		[Description("Craft anywhere")]
+		public bool bearskinLeggingsAnywhere = false;
+
+		[Name("Deerskin Coat")]
+		[Description("Craft anywhere")]
+		public bool deerskinCoatAnywhere = false;
+
+		[Name("Deerskin Gloves")]
+		[Description("Craft anywhere")]
+		public bool deerskinGlovesAnywhere = false;
+
+		[Name("Wolfskin Boots")]
+		[Description("Craft anywhere")]
+		public bool wolfskinBootsAnywhere = false;
+
+		[Name("Wolfskin Hat")]
+		[Description("Craft anywhere")]
+		public bool wolfskinHatAnywhere = false;
 	}
 
 	internal static class Settings

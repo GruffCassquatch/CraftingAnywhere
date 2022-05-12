@@ -11,6 +11,10 @@ namespace CraftingAnywhere
         {
             internal static void Postfix(BlueprintItem bpi)
             {
+                string itemName = bpi?.m_CraftedResult?.name;
+                string noisemaker = "NoiseMaker";
+
+
                 if (Settings.options.arrowAnywhere && bpi?.m_CraftedResult?.name == "GEAR_Arrow")
                 {
                     bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
@@ -101,11 +105,6 @@ namespace CraftingAnywhere
                     bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
                 }
 
-                else if (Settings.options.noisemakerAnywhere && bpi?.m_CraftedResult?.name == "GEAR_Noisemaker")
-                {
-                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
-                }
-
                 else if (Settings.options.rabbitskinHatAnywhere && bpi?.m_CraftedResult?.name == "GEAR_RabbitskinHat")
                 {
                     bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
@@ -140,6 +139,37 @@ namespace CraftingAnywhere
                 {
                     bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
                 }
+
+                else if (Settings.options.bearskinLeggingsAnywhere && bpi?.m_CraftedResult?.name == "GEAR_BearskinLeggings")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
+                else if (Settings.options.deerskinCoatAnywhere && bpi?.m_CraftedResult?.name == "GEAR_DeerskinCoat")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
+                else if (Settings.options.deerskinGlovesAnywhere && bpi?.m_CraftedResult?.name == "GEAR_DeerskinGloves")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
+                else if (Settings.options.wolfskinBootsAnywhere && bpi?.m_CraftedResult?.name == "GEAR_WolfskinBoots")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
+                else if (Settings.options.wolfskinHatAnywhere && bpi?.m_CraftedResult?.name == "GEAR_WolfskinHat")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
+                else if (Settings.options.noisemakerAnywhere && bpi?.m_CraftedResult?.name == "GEAR_NoiseMaker")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
             }
         }
     }
