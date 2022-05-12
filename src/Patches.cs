@@ -11,10 +11,6 @@ namespace CraftingAnywhere
         {
             internal static void Postfix(BlueprintItem bpi)
             {
-                string itemName = bpi?.m_CraftedResult?.name;
-                string noisemaker = "NoiseMaker";
-
-
                 if (Settings.options.arrowAnywhere && bpi?.m_CraftedResult?.name == "GEAR_Arrow")
                 {
                     bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
