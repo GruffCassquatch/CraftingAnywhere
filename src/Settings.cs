@@ -15,6 +15,10 @@ namespace CraftingAnywhere
 		[Description("Craft anywhere")]
 		public bool gunpowderAnywhere = false;
 
+		[Name("Noisemaker")]
+		[Description("Craft anywhere")]
+		public bool noisemakerAnywhere = false;
+
 		[Name("Revolver Ammunition")]
 		[Description("Craft anywhere")]
 		public bool revolverAmmunitionAnywhere = false;

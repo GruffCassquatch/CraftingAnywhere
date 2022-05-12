@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using UnityEngine;
 
 namespace CraftingAnywhere
@@ -97,6 +97,11 @@ namespace CraftingAnywhere
                 }
 
                 else if (Settings.options.moosehideCloakAnywhere && bpi?.m_CraftedResult?.name == "GEAR_MooseHideCloak")
+                {
+                    bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
+                }
+
+                else if (Settings.options.noisemakerAnywhere && bpi?.m_CraftedResult?.name == "GEAR_Noisemaker")
                 {
                     bpi.m_RequiredCraftingLocation = CraftingLocation.Anywhere;
                 }
