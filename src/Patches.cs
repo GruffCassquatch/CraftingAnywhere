@@ -17,7 +17,7 @@ namespace CraftingAnywhere
 
         internal static void Postfix(BlueprintData bpi)
         {
-            string? name = bpi?.m_CraftedResult?.name?.Substring(5);
+            string? name = bpi?.m_CraftedResultGear?.name?.Substring(5);
 
             if (name != null)
             {
